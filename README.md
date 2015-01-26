@@ -29,7 +29,7 @@ The `BaseEnum` class provides support for enumerated types. The class also provi
 ```php
 use abhimanyu\enum\helpers;
 
-class Month extends Enum
+class Month extends BaseEnum
 {
     const January = 1;
     const February = 2;
