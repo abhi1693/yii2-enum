@@ -26,7 +26,7 @@ Usage
 
 The `BaseEnum` class provides support for enumerated types. The class also provides functionality that may be useful in the course of creating and validation enums. To make use of it, you simply create your own class that extends `BaseEnum`:
 
-```
+```php
 use abhimanyu\enum\helpers;
 
 class Month extends Enum
@@ -47,7 +47,7 @@ class Month extends Enum
 ```
 
 There are multiple ways to create a new value for an enumerated type:
-```
+```php
 // static call
 $month = Month::May();
 
@@ -62,14 +62,14 @@ $month = Month::createByName('May');
 ```
 
 It is possible to retrieve the name and value of the instance of the enumerated type:
-```
+```php
 $name = $month->getName();
 $value = $month->getValue();
 ```
 > **NOTE:** If you have multiple class constants defined with the same value, then an array of names will be returned instead of a string for only one. It will be up to you to decide which to use.
 
 The class also provides ways of validating names and values:
-```
+```php
 if (Month::isValidName('May')) {
     // it is valid
 }
@@ -80,7 +80,7 @@ if (Month::isValidValue($value)) {
 ```
 
 If you need to retrieve a complete list of possible enum values, you can get them either by name or value:
-```
+```php
 $constantsByName = Month::getConstantsByName();
 
 echo $constantsByName['May']; // 5
