@@ -1,0 +1,26 @@
+{
+    "name": "abhi1693/yii2-enum",
+    "description": "Enumerable Helper",
+    "type": "yii2-extension",
+    "keywords": ["yii2","extension","enum","module"],
+    "license": "MIT License",
+    "authors": [
+        {
+            "name": "Abhimanyu Saharan",
+            "email": "abhimanyu@teamvulcans.com"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/abhi1693/yii2-enum/issues?state=open",
+        "source": "https://github.com/abhi1693/yii2-enum/"
+    },
+    "require": {
+        "yiisoft/yii2": "*"
+    },
+    
+    "autoload": {
+        "psr-4": {
+            "abhi1693\\enum\\": ""
+        }
+    }
+}
