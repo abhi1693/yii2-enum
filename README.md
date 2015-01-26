@@ -1,4 +1,4 @@
-Yii2-User
+Yii2-Enum
 =========
 
 [![Code Climate](https://codeclimate.com/github/abhi1693/yii2-enum/badges/gpa.svg)](https://codeclimate.com/github/abhi1693/yii2-enum)
