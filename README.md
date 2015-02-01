@@ -13,11 +13,11 @@ The preferred way to install this extension is through [composer](http://getcomp
 
 Either run
 ```
-php composer.phar require --prefer-dist abhi1693/yii2-enum "*"
+php composer.phar require --prefer-dist abhi1693/yii2-enum "1.0.0"
 ```
 or add
 ```
-"yii2mod/yii2-enum": "*"
+"abhi1693/yii2-enum": "1.0.0"
 ```
 to the require section of your `composer.json` file.
 
