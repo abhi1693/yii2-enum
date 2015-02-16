@@ -1,6 +1,7 @@
 Yii2-Enum
 =========
 
+[![Dependency Status](https://www.versioneye.com/user/projects/54e1e6550a910b08650001e4/badge.svg?style=flat)](https://www.versioneye.com/user/projects/54e1e6550a910b08650001e4)
 [![Code Climate](https://codeclimate.com/github/abhi1693/yii2-enum/badges/gpa.svg)](https://codeclimate.com/github/abhi1693/yii2-enum)
 [![Latest Stable Version](https://poser.pugx.org/abhi1693/yii2-enum/v/stable.svg)](https://packagist.org/packages/abhi1693/yii2-enum) [![Total Downloads](https://poser.pugx.org/abhi1693/yii2-enum/downloads.svg)](https://packagist.org/packages/abhi1693/yii2-enum) [![Latest Unstable Version](https://poser.pugx.org/abhi1693/yii2-enum/v/unstable.svg)](https://packagist.org/packages/abhi1693/yii2-enum) [![License](https://poser.pugx.org/abhi1693/yii2-enum/license.svg)](https://packagist.org/packages/abhi1693/yii2-enum)
 
