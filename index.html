@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+
+    <title>Yii2 Enum by abhi1693</title>
+  </head>
+
+  <body>
+
+    <header>
+      <div class="container">
+        <h1>Yii2 Enum</h1>
+        <h2>Enumerable Helper</h2>
+
+        <section id="downloads">
+          <a href="https://github.com/abhi1693/yii2-enum/zipball/master" class="btn">Download as .zip</a>
+          <a href="https://github.com/abhi1693/yii2-enum/tarball/master" class="btn">Download as .tar.gz</a>
+          <a href="https://github.com/abhi1693/yii2-enum" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
+        </section>
+      </div>
+    </header>
+
+    <div class="container">
+      <section id="main_content">
+        <h1>
+<a id="yii2-enum" class="anchor" href="#yii2-enum" aria-hidden="true"><span class="octicon octicon-link"></span></a>Yii2-Enum</h1>
+
+<p>Enumerable Helper for Yii2</p>
+
+<h2>
+<a id="documentation" class="anchor" href="#documentation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Documentation</h2>
+
+<h3>
+<a id="installation" class="anchor" href="#installation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Installation</h3>
+
+<p>The preferred way to install this extension is through <a href="http://getcomposer.org/download/">composer</a>.</p>
+
+<p>Either run</p>
+
+<div class="highlight highlight-php"><pre><span class="pl-s2"><span class="pl-c1">php</span> <span class="pl-c1">composer</span><span class="pl-k">.</span><span class="pl-c1">phar</span> <span class="pl-k">require</span> <span class="pl-k">--</span><span class="pl-c1">prefer</span><span class="pl-k">-</span><span class="pl-c1">dist</span> <span class="pl-c1">abhi1693</span><span class="pl-k">/</span><span class="pl-c1">yii2</span><span class="pl-k">-</span><span class="pl-c1">enum</span> <span class="pl-s1"><span class="pl-pds">"</span>1.0.0<span class="pl-pds">"</span></span></span></pre></div>
+
+<p>or add</p>
+
+<div class="highlight highlight-php"><pre><span class="pl-s2"><span class="pl-s1"><span class="pl-pds">"</span>abhi1693/yii2-enum<span class="pl-pds">"</span></span>: <span class="pl-s1"><span class="pl-pds">"</span>1.0.0<span class="pl-pds">"</span></span></span></pre></div>
+
+<p>to the require section of your <code>composer.json</code> file.</p>
+
+<h3>
+<a id="usage" class="anchor" href="#usage" aria-hidden="true"><span class="octicon octicon-link"></span></a>Usage</h3>
+
+<p>The <code>BaseEnum</code> class provides support for enumerated types. The class also provides functionality that may be useful in the course of creating and validation enums. To make use of it, you simply create your own class that extends <code>BaseEnum</code>:</p>
+
+<div class="highlight highlight-php"><pre><span class="pl-s2"><span class="pl-k">use</span> <span class="pl-s3">abhimanyu\enum\helpers</span>;</span>
+<span class="pl-s2"></span>
+<span class="pl-s2"><span class="pl-st">class</span> <span class="pl-en">Month</span> <span class="pl-s">extends</span> <span class="pl-e">BaseEnum</span></span>
+<span class="pl-s2">{</span>
+<span class="pl-s2">    <span class="pl-s">const</span> <span class="pl-c1">January</span> <span class="pl-k">=</span> <span class="pl-c1">1</span>;</span>
+<span class="pl-s2">    <span class="pl-s">const</span> <span class="pl-c1">February</span> <span class="pl-k">=</span> <span class="pl-c1">2</span>;</span>
+<span class="pl-s2">    <span class="pl-s">const</span> <span class="pl-c1">March</span> <span class="pl-k">=</span> <span class="pl-c1">3</span>;</span>
+<span class="pl-s2">    <span class="pl-s">const</span> <span class="pl-c1">April</span> <span class="pl-k">=</span> <span class="pl-c1">4</span>;</span>
+<span class="pl-s2">    <span class="pl-s">const</span> <span class="pl-c1">May</span> <span class="pl-k">=</span> <span class="pl-c1">5</span>;</span>
+<span class="pl-s2">    <span class="pl-s">const</span> <span class="pl-c1">June</span> <span class="pl-k">=</span> <span class="pl-c1">6</span>;</span>
+<span class="pl-s2">    <span class="pl-s">const</span> <span class="pl-c1">July</span> <span class="pl-k">=</span> <span class="pl-c1">7</span>;</span>
+<span class="pl-s2">    <span class="pl-s">const</span> <span class="pl-c1">August</span> <span class="pl-k">=</span> <span class="pl-c1">8</span>;</span>
+<span class="pl-s2">    <span class="pl-s">const</span> <span class="pl-c1">September</span> <span class="pl-k">=</span> <span class="pl-c1">9</span>;</span>
+<span class="pl-s2">    <span class="pl-s">const</span> <span class="pl-c1">October</span> <span class="pl-k">=</span> <span class="pl-c1">10</span>;</span>
+<span class="pl-s2">    <span class="pl-s">const</span> <span class="pl-c1">November</span> <span class="pl-k">=</span> <span class="pl-c1">11</span>;</span>
+<span class="pl-s2">    <span class="pl-s">const</span> <span class="pl-c1">December</span> <span class="pl-k">=</span> <span class="pl-c1">12</span>;</span>
+<span class="pl-s2">}</span></pre></div>
+
+<p>There are multiple ways to create a new value for an enumerated type:</p>
+
+<div class="highlight highlight-php"><pre><span class="pl-s2"><span class="pl-c">// static call</span></span>
+<span class="pl-s2"><span class="pl-vo">$month</span> <span class="pl-k">=</span> <span class="pl-s3">Month</span><span class="pl-k">::</span>May();</span>
+<span class="pl-s2"></span>
+<span class="pl-s2"><span class="pl-c">// direct instantiation</span></span>
+<span class="pl-s2"><span class="pl-vo">$month</span> <span class="pl-k">=</span> <span class="pl-k">new</span> <span class="pl-s3">Month</span>(<span class="pl-s3">Month</span><span class="pl-k">::</span><span class="pl-c1">May</span>);</span>
+<span class="pl-s2"></span>
+<span class="pl-s2"><span class="pl-c">// by value</span></span>
+<span class="pl-s2"><span class="pl-vo">$month</span> <span class="pl-k">=</span> <span class="pl-s3">Month</span><span class="pl-k">::</span>createByValue(<span class="pl-c1">5</span>);</span>
+<span class="pl-s2"></span>
+<span class="pl-s2"><span class="pl-c">// by name</span></span>
+<span class="pl-s2"><span class="pl-vo">$month</span> <span class="pl-k">=</span> <span class="pl-s3">Month</span><span class="pl-k">::</span>createByName(<span class="pl-s1"><span class="pl-pds">'</span>May<span class="pl-pds">'</span></span>);</span></pre></div>
+
+<p>It is possible to retrieve the name and value of the instance of the enumerated type:</p>
+
+<div class="highlight highlight-php"><pre><span class="pl-s2"><span class="pl-vo">$name</span> <span class="pl-k">=</span> <span class="pl-vo">$month</span><span class="pl-k">-&gt;</span>getName();</span>
+<span class="pl-s2"><span class="pl-vo">$value</span> <span class="pl-k">=</span> <span class="pl-vo">$month</span><span class="pl-k">-&gt;</span>getValue();</span></pre></div>
+
+<blockquote>
+<p><strong>NOTE:</strong> If you have multiple class constants defined with the same value, then an array of names will be returned instead of a string for only one. It will be up to you to decide which to use.</p>
+</blockquote>
+
+<p>The class also provides ways of validating names and values:</p>
+
+<div class="highlight highlight-php"><pre><span class="pl-s2"><span class="pl-k">if</span> (<span class="pl-s3">Month</span><span class="pl-k">::</span>isValidName(<span class="pl-s1"><span class="pl-pds">'</span>May<span class="pl-pds">'</span></span>)) {</span>
+<span class="pl-s2">    <span class="pl-c">// it is valid</span></span>
+<span class="pl-s2">}</span>
+<span class="pl-s2"></span>
+<span class="pl-s2"><span class="pl-k">if</span> (<span class="pl-s3">Month</span><span class="pl-k">::</span>isValidValue(<span class="pl-vo">$value</span>)) {</span>
+<span class="pl-s2">    <span class="pl-c">// it is valid</span></span>
+<span class="pl-s2">}</span></pre></div>
+
+<p>If you need to retrieve a complete list of possible enum values, you can get them either by name or value:</p>
+
+<div class="highlight highlight-php"><pre><span class="pl-s2"><span class="pl-vo">$constantsByName</span> <span class="pl-k">=</span> <span class="pl-s3">Month</span><span class="pl-k">::</span>getConstantsByName();</span>
+<span class="pl-s2"></span>
+<span class="pl-s2"><span class="pl-s3">echo</span> <span class="pl-vo">$constantsByName</span>[<span class="pl-s1"><span class="pl-pds">'</span>May<span class="pl-pds">'</span></span>]; <span class="pl-c">// 5</span></span>
+<span class="pl-s2"></span>
+<span class="pl-s2"><span class="pl-vo">$constantsByValue</span> <span class="pl-k">=</span> <span class="pl-s3">Month</span><span class="pl-k">::</span>getConstantsByValue();</span>
+<span class="pl-s2"></span>
+<span class="pl-s2"><span class="pl-s3">echo</span> <span class="pl-vo">$constantsByValue</span>[<span class="pl-c1">5</span>]; <span class="pl-c">// "May"</span></span></pre></div>
+      </section>
+    </div>
+
+    
+  </body>
+</html>
